@@ -10,3 +10,9 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+##About the project 
+
+- the App name is My Todos.
+- Installation instructions: First I had to download node.js and npm on my computer. Then I clone my git repository.
+- To run the developement  server you have to use the command "npm run dev" in the terminal. This will open a browser to the local link. 

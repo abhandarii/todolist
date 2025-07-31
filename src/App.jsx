@@ -2,6 +2,7 @@
 import './App.css'
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+import React, { useState } from 'react';
 
 
 function App() {
@@ -11,11 +12,16 @@ function App() {
     {id: 3, title: "Code Out App"},
   ]
 
+  const [newTodo, setNewTodo] = useState("New Day, another Todo");
+
   return (
     <div className = "coming-soon">
       <h1>Todo List</h1>
       <TodoForm />
-      <TodoList />
+      <p>
+        {"New Todos"}
+      </p>
+      <TodoList todos = {todos} />
       </div>
       )
     }

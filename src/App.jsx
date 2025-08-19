@@ -4,26 +4,13 @@ import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 import React, { useState } from 'react';
 
+function TodoList({todoList}) {
+  return(
+    <ul>
+      {todoList.map(todo => <TodoListItem key={todo.id} todo={todo} />)}
+    </ul>
+  )
 
-function App() {
-  const todos = [
-    {id: 1, title: "Review Resources"},
-    {id: 2, title: "Take Notes"},
-    {id: 3, title: "Code Out App"},
-  ]
+}
 
-  const [newTodo, setNewTodo] = useState("New Day, another Todo");
-
-  return (
-    <div className = "coming-soon">
-      <h1>Todo List</h1>
-      <TodoForm />
-      <p>
-        {"New Todos"}
-      </p>
-      <TodoList todos = {todos} />
-      </div>
-      )
-    }
-
-export default App;
+export default TodoListS;
